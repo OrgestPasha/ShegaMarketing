@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Century-Gothic';
+    src: url('centurygothic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Century-Gothic-Bold';
+    src: url('centurygothic_bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Gill-Sans';
+    src: url('gill-sans-ultra-bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  $colorShega:#E1264F;
+  $colorBackground:#FFFFFF;
+
+
+  body{
+    font-family:'Century-Gothic',sans-serif;
+  }
+
+  div{
+    background-color: $colorBackground;
+  }
+
+  h1{
+    font-family:'Gill-Sans',sans-serif;
+    color: $colorShega;
+    font-size:3rem;
+  }
+
+  b{
+    font-family: 'Gills-Sans',sans-serif;
+    color: $colorShega;
+  }
+
+  .thinSpan{
+    color: $colorShega;
+  }
+
+  a{
+    font-family: 'Gill-Sans';
+    text-decoration: none;
+    color: $colorShega;
+  }

@@ -1,0 +1,11 @@
+
+*{
+    border: 1px solid red;
+}
+body{
+    display:flex;
+    justify-content:center;
+    .website-container{
+        width:calc(100vw - 300px);
+    }
+}
