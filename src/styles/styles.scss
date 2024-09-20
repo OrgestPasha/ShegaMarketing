@@ -41,11 +41,15 @@ html{
     font-style: normal;
   }
 
+    
+ 
+
 
   *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
   }
 
   body{
@@ -78,8 +82,12 @@ html{
     color: $colorShega;
     font-size: 1.25rem;
 
-    &:hover{
-      cursor: pointer;
+    &::before{
+      content: "";
+      width:100px;
+      height: 2px;
+      position: absolute;
+      border: $colorShega;
     }
   }
   
