@@ -1,3 +1,25 @@
+$colorShega:#E1264F;
+$colorBackground:#FFFFFF;
+
+html{
+  scroll-behavior: smooth;
+}
+
+/* WebKit Browsers */
+::-webkit-scrollbar {
+  width: 6px; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255); /* Set the background of the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: $colorShega; /* Set the color of the scrollbar */
+  border-radius: 20px; /* Add some rounding to the scrollbar */
+}
+
+
 @font-face {
     font-family: 'Century-Gothic';
     src: url('centurygothic.ttf') format('truetype');
@@ -19,9 +41,12 @@
     font-style: normal;
   }
 
-  $colorShega:#E1264F;
-  $colorBackground:#FFFFFF;
 
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
   body{
     font-family:'Century-Gothic',sans-serif;
@@ -38,8 +63,9 @@
   }
 
   b{
-    font-family: 'Gills-Sans',sans-serif;
+    font-family: 'Gill-Sans';
     color: $colorShega;
+    font-weight: bold;
   }
 
   .thinSpan{
@@ -50,4 +76,15 @@
     font-family: 'Gill-Sans';
     text-decoration: none;
     color: $colorShega;
+    font-size: 1.25rem;
+
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  
+
+  p{
+    font-family:'Century-Gothic',sans-serif ;
+    font-size: 1.25rem;
   }
