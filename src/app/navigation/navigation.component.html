@@ -6,10 +6,22 @@
       <p>marketing</p>
     </div>
   </div>
-  <div class="navigation-link-container">
-    <a (click)="scrollToElement('')">Home</a>
-    <a href="">About Us</a>
-    <a href="">Services</a>
-    <a href="">Contact</a>
+  <div class="navigation-container-2">
+    <div
+      class="navigation-link-container"
+      [ngStyle]="showNavigationItems ? { right: '0px' } : {}"
+    >
+      <a (click)="scrollToElement('')">Home</a>
+
+      <a>About Us</a>
+      <a>Services</a>
+      <a>Contact</a>
+    </div>
+    <img
+      src="menuIcon.png"
+      alt=""
+      *ngIf="showNavigation"
+      (click)="navigationToggle()"
+    />
   </div>
 </div>

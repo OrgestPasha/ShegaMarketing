@@ -7,3 +7,11 @@ body{
         width:calc(100vw - 300px);
     }
 }
+
+@media (max-width: 36rem){
+    body{
+        .website-container{
+            width:calc(100vw - 5vw);
+        }
+    }
+}

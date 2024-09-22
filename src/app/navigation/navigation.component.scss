@@ -1,3 +1,5 @@
+$colorShega:#E1264F;
+$colorBackground:#FFFFFF;
 
 
 .navigation-container{
@@ -6,7 +8,7 @@
     align-items: center;
     justify-content: space-between;
     margin-top:50px;
-    padding-bottom:4000px;
+    
 
     .logo-container{
         display: flex;
@@ -19,16 +21,73 @@
             padding-top: 15px;
             display:flex;
             flex-direction: column;
-            justify-content: centers;
+            justify-content: center;
            p{
             margin-top:-6px;
            }   
         }    
     }
-
-    .navigation-link-container{
-        a{
-            margin-left: 50px;
+    .navigation-container-2{
+        display: flex;
+        img{
+            width:40px;
+            height: 28px;
+        }
+        .navigation-link-container{
+            a{  
+                position: relative;
+                margin-left: 50px;
+               
+                &::before{
+                    content: "";
+                    position: absolute;
+                    width:0%;
+                    height:2px;
+                    translate:0px 25px ;
+                    background: $colorShega;
+                    transition: 0.5s;
+                }
+                &:hover{
+                    &::before{
+                        width:100%;
+                    }
+                }
+            }
         }
     }
+   
+}
+
+@media (max-width: 36rem){
+    .navigation-container{
+        margin-top: 20px;
+        
+        .navigation-container-2{
+            
+            flex-direction:column-reverse;
+            .navigation-link-container{
+
+            position: absolute;
+            top:75px;
+            right:-150px;
+            width:189px;
+            height:304px;
+            padding:0px 20px 20px 20px;
+             background-color: $colorShega;
+             border-radius:69px 0px 0px 95px ; 
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: end;
+             a{ 
+                color: $colorBackground;  
+                margin-left:0;
+                margin-top:35px;
+                
+             }  
+              
+        }
+    }
+    }
+    
 }

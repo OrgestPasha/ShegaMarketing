@@ -49,6 +49,7 @@ html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  
 
   }
 
@@ -81,14 +82,7 @@ html{
     text-decoration: none;
     color: $colorShega;
     font-size: 1.25rem;
-
-    &::before{
-      content: "";
-      width:100px;
-      height: 2px;
-      position: absolute;
-      border: $colorShega;
-    }
+    
   }
   
 
