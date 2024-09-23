@@ -1,3 +1,8 @@
+<div
+  class="overlay"
+  *ngIf="showNavigationItems"
+  (click)="navigationToggle()"
+></div>
 <div class="navigation-container">
   <div class="logo-container">
     <img src="logo.png" />
@@ -9,7 +14,7 @@
   <div class="navigation-container-2">
     <div
       class="navigation-link-container"
-      [ngStyle]="showNavigationItems ? { right: '0px' } : {}"
+      [ngStyle]="showNavigationItems ? { transform: 'translateX(-200px)' } : {}"
     >
       <a (click)="scrollToElement('')">Home</a>
 

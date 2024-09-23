@@ -1,0 +1,81 @@
+
+.dashboard-container{
+    margin-top:150px;
+    display: flex;
+    flex-direction: column;
+    .dashboard-upper{
+        width:65%;
+        display: flex;
+        .dashboard-upper-left{
+            display: flex;
+            justify-content: space-between;
+            
+            img{
+                max-height:260px;
+            }  
+            .text-container{
+                width:90%;
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                p{
+                    margin-top:20px;
+                    width:100%;
+                }
+                .hello-text{
+                    text-align: end ;
+                }
+            }
+        }
+        .dashboard-upper-right{
+        
+            img{
+                position: absolute;
+                right: -50px;
+                transform:translateY(-100px) rotate(-45deg);
+            }
+        }
+    }
+    .dashboard-lower{
+        width:100vw;
+        height:200px;
+        transform: translate(-10vw ,175px);
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 36rem){
+    .dashboard-container{
+        margin-top:50px;
+        .dashboard-upper{
+            flex-direction: column;
+            width:100%;
+            .dashboard-upper-left{
+                justify-content: start;
+                .text-container{
+                    width:75%;
+                    margin-left:35px;
+                    .hello-text{
+                        text-align:start;
+                    }
+                }
+            }
+            .dashboard-upper-right{
+                width:105%;
+                overflow: hidden;  
+                img{
+                    position: relative;
+                    scale:0.8;
+                    top:15px;
+                    
+                    }
+                }
+            }
+        .dashboard-lower{
+            
+            background-size:120%;
+            transform: translate(-5vw ,-175px);
+        }    
+        }
+    }
+    

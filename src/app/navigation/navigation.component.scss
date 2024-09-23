@@ -1,6 +1,15 @@
 $colorShega:#E1264F;
 $colorBackground:#FFFFFF;
-
+.overlay{
+    position: fixed;
+    width:100vw; 
+    height:100vh;
+    z-index:2;
+    background:#83001c ;
+    opacity:0.2;
+    transform: translateX(-5vw);
+    transition: 0.5;
+}
 
 .navigation-container{
     width:100%;
@@ -14,8 +23,8 @@ $colorBackground:#FFFFFF;
         display: flex;
         align-items: center;
         img{
-            width:55px;
-            height:55px;
+            width:51px;
+            height:56px;
         }
         .text-container{
             padding-top: 15px;
@@ -60,16 +69,17 @@ $colorBackground:#FFFFFF;
 
 @media (max-width: 36rem){
     .navigation-container{
-        margin-top: 20px;
+        margin-top: 25px;
         
         .navigation-container-2{
             
             flex-direction:column-reverse;
             .navigation-link-container{
 
-            position: absolute;
-            top:75px;
-            right:-150px;
+            position: fixed;
+            z-index:3;
+            top:110px;
+            right:-200px;
             width:189px;
             height:304px;
             padding:0px 20px 20px 20px;
@@ -79,6 +89,7 @@ $colorBackground:#FFFFFF;
              flex-direction: column;
              justify-content: center;
              align-items: end;
+             transition: 0.5s;
              a{ 
                 color: $colorBackground;  
                 margin-left:0;
