@@ -45,15 +45,21 @@
 }
 
 @media (max-width: 36rem){
+    *{
+        border: 1px solid green;
+    }
     .dashboard-container{
-        margin-top:50px;
+        margin-top:25px;
         .dashboard-upper{
             flex-direction: column;
             width:100%;
             .dashboard-upper-left{
                 justify-content: start;
+                img{
+                    scale:0.8;
+                }
                 .text-container{
-                    width:75%;
+                    width:100%;
                     margin-left:35px;
                     .hello-text{
                         text-align:start;
@@ -62,11 +68,14 @@
             }
             .dashboard-upper-right{
                 width:105%;
-                overflow: hidden;  
+                margin-top:5px;
+                overflow-x: hidden;  
                 img{
                     position: relative;
-                    scale:0.8;
-                    top:15px;
+                    scale:0.65;
+                    top:-55px;
+                    
+                    right: -95px;
                     
                     }
                 }
@@ -74,7 +83,7 @@
         .dashboard-lower{
             
             background-size:120%;
-            transform: translate(-5vw ,-175px);
+            transform: translate(-5vw ,-305px);
         }    
         }
     }

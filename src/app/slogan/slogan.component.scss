@@ -47,3 +47,43 @@ $colorBackground:#FFFFFF;
     }
 }
 
+@media (max-width: 36rem){
+    .slogan-container{
+        margin-top:-250px;
+        transform: translateX(-10px);
+        .slogan-left{
+            width: 230px;
+            height:230px;
+            img{
+                transform: translate(50%, 120px);
+                scale:0.4;
+            }
+            .text-container{
+                width:55%;
+                margin-left:-10px;
+                h3{
+                    display: none;
+                }
+                h2{ 
+                    font-size:1rem;
+                }
+                p{  
+                    margin-bottom:10px;
+                    margin-top:35px;
+                    text-align: start;
+                }
+            }
+           
+        }
+        .slogan-right{
+            height:250px;
+            margin-left: 0;
+            
+            h1{ 
+                
+                font-size: 1rem;
+            }
+        }
+    }
+}
+    
