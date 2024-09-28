@@ -1,0 +1,20 @@
+$colorShega:#E1264F;
+$colorBackground:#FFFFFF;
+
+.service-container{
+    margin:-50px;
+    .services-top{
+        h1{
+        margin-left:100px;    
+            &::before{
+                content: "";
+                position:absolute;
+                width:16px;
+                height:111px;
+                transform: translate(-50px, -25px);
+                border-radius:16px;
+                background-color:$colorShega;
+            }
+        }
+    }
+}
