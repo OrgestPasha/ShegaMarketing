@@ -45,20 +45,25 @@
 }
 
 @media (max-width: 36rem){
-   
+    *{
+        border: 1px solid red;
+    }
     .dashboard-container{
         margin-top:25px;
         .dashboard-upper{
             flex-direction: column;
             width:100%;
+            height:80%;
             .dashboard-upper-left{
                 justify-content: start;
+                
                 img{
                     scale:0.8;
                 }
                 .text-container{
                     width:100%;
                     margin-left:35px;
+                    margin-bottom: -45px;
                     .hello-text{
                         text-align:start;
                     }
@@ -66,12 +71,12 @@
             }
             .dashboard-upper-right{
                 width:105%;
-                margin-top:5px;
+                margin-top:0px;
                 overflow-x: hidden;  
                 img{
                     position: relative;
                     scale:0.65;
-                    top:-55px;
+                    top:-50px;
                     
                     right: -95px;
                     
