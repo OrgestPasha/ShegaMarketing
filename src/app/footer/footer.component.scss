@@ -64,6 +64,7 @@ h3{
     
     .footer-container{
         translate: -5vw;  
+        
         .footer-left{
             position: relative;
             h1{
@@ -77,7 +78,7 @@ h3{
                     transform: translate(60px);  
                 }
                 .footer-text{
-                    transform: translate(50px);  
+                    transform: translate(30px,10px);  
                     b{
                         font-size: 1rem;
                     }
@@ -87,13 +88,14 @@ h3{
             
         }
         .footer-right{
+            overflow-x: hidden;
            z-index:-2;
             img{
-                position: absolute;
-                width:250px;
-                height:280px;
+                
+                width:220px;
+                height:250px;
                 z-index: -1;
-                transform: translate(-180px ,-130px);
+                transform: translate(-160px ,-130px);
                 background-color: transparent;
             }
         }    
