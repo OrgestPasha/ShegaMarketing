@@ -45,9 +45,7 @@
 }
 
 @media (max-width: 36rem){
-    *{
-        border: 1px solid red;
-    }
+  
     .dashboard-container{
         margin-top:25px;
         .dashboard-upper{
@@ -76,7 +74,7 @@
                 img{
                     position: relative;
                     scale:0.65;
-                    top:-50px;
+                    top:-55px;
                     
                     right: -95px;
                     
