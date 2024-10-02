@@ -1,0 +1,20 @@
+.extra-container{
+    margin-top:300px;
+    display:flex;
+    .extra-left{
+        margin-right:50px;
+        img{
+            height:230px;
+            width:15px;
+        }
+    }
+    .extra-right{
+        h1{
+            margin-bottom:20px;
+            translate:0px ;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+    }
+}

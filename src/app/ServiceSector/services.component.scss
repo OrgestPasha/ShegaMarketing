@@ -19,10 +19,20 @@ $colorBackground:#FFFFFF;
     }
   .services-bottom{
     margin-top:100px;
+    display:flex;
+    .bottom-left{
+        display: flex;
+        width:50%;
+        justify-content: space-around;
+    }
+    .bottom-right{
+        display: flex;
+        width:50%;
+        justify-content: space-around;
+    }   
     .s-container{
         width:200px;
-        height:295px;
-        margin:50px;
+       
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -44,10 +54,15 @@ $colorBackground:#FFFFFF;
           height: 120px;
           position: absolute;
           transform: translateY(130%);
-          background: radial-gradient(circle, #FF0000 50%, transparent 51%) center / 35px 35px repeat;
+          background: radial-gradient(circle, $colorShega 50%, transparent 51%) center / 35px 35px repeat;
           animation: move-background 30s linear infinite;
           animation-play-state: paused;
         
+        }
+        p{
+           margin-top:120px;
+           text-align: center;
+           font-size: 2rem;
         }
         &:hover{
             .balls-background{
@@ -71,5 +86,25 @@ $colorBackground:#FFFFFF;
 
     100% {
         background-position: center 0%;
+    }
+  }
+
+  @media (max-width:36rem) {
+    
+    .service-container{
+        overflow: hidden;
+        width:100vw;
+    }
+    .services-bottom{
+        flex-direction: column;
+        justify-content:center;
+        
+        .s-container{
+            margin: 0;
+           scale: 0.8;
+           transform: translate(50px);   
+        }
+
+        
     }
   }

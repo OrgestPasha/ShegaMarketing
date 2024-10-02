@@ -1,0 +1,101 @@
+$colorShega:#E1264F;
+$colorBackground:#FFFFFF;
+
+h3{
+    color: $colorBackground;
+}
+*{
+    background-color: $colorShega;
+  
+
+}
+.footer-container{
+    margin-top:100px;
+    width:100vw;
+    height:400px;
+    background-color: $colorShega;
+    translate:-10vw;
+    display: flex;
+    .footer-left{
+        width:50%;
+        margin-left:150px;
+        margin-top:50px;
+        display: flex;
+        flex-direction: column;
+        
+       
+        h1{
+            color: $colorBackground;
+            transform: translate(60px);
+            margin-bottom:20px;
+        }
+        .footer-content{
+            color: $colorBackground;
+            display: flex;
+            img{
+                max-height:250px;
+            }
+            .footer-text{
+                div{
+                    margin-bottom:20px;
+                }
+                margin-left:50px;
+                b{
+                    color: $colorBackground;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        
+    }
+    .footer-right{
+        width:50%;
+        img{
+            position: absolute;
+            width:450px;
+            height:500px;
+            transform: translate(200px ,-200px);
+            background-color: transparent;
+        }
+    }
+}
+
+@media (max-width: 36rem){
+    
+    .footer-container{
+        translate: -5vw;  
+        .footer-left{
+            position: relative;
+            h1{
+                
+                background: transparent;
+                position: relative;
+               z-index: 3;
+            }
+            .footer-content{
+                img{
+                    transform: translate(60px);  
+                }
+                .footer-text{
+                    transform: translate(50px);  
+                    b{
+                        font-size: 1rem;
+                    }
+                }
+            }
+            transform: translate(-200px);
+            
+        }
+        .footer-right{
+           z-index:-2;
+            img{
+                position: absolute;
+                width:250px;
+                height:280px;
+                z-index: -1;
+                transform: translate(-180px ,-130px);
+                background-color: transparent;
+            }
+        }    
+    }
+}
