@@ -47,7 +47,9 @@
 @media (max-width: 36rem){
   
     .dashboard-container{
-        margin-top:25px;
+       width:95vw;
+       
+        margin-top:0px;
         .dashboard-upper{
             flex-direction: column;
             width:100%;
@@ -69,12 +71,13 @@
             }
             .dashboard-upper-right{
                 width:105%;
-                margin-top:0px;
+                margin-top:10px;
                 overflow-x: hidden;  
                 img{
                     position: relative;
                     scale:0.65;
-                    top:-30px;
+                    top:-40px;
+                    z-index:0;
                     
                     right: -95px;
                     

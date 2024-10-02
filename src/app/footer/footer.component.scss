@@ -6,13 +6,12 @@ h3{
 }
 *{
     background-color: $colorShega;
-  
-
 }
 .footer-container{
     margin-top:100px;
     width:100vw;
     height:400px;
+    margin-bottom: -50px;
     background-color: $colorShega;
     translate:-10vw;
     display: flex;
@@ -63,12 +62,13 @@ h3{
 @media (max-width: 36rem){
     
     .footer-container{
+        width:105vw;
         translate: -5vw;  
         
         .footer-left{
             position: relative;
             h1{
-                
+               
                 background: transparent;
                 position: relative;
                z-index: 3;
@@ -78,13 +78,13 @@ h3{
                     transform: translate(60px);  
                 }
                 .footer-text{
-                    transform: translate(30px,10px);  
+                    transform: translate(50px,10px);  
                     b{
-                        font-size: 1rem;
+                        font-size: 0.8rem;
                     }
                 }
             }
-            transform: translate(-200px);
+            transform: translate(-180px);
             
         }
         .footer-right{
@@ -92,10 +92,10 @@ h3{
            z-index:-2;
             img{
                 
-                width:220px;
-                height:250px;
+                width:180px;
+                height:200px;
                 z-index: -1;
-                transform: translate(-160px ,-130px);
+                transform: translate(-130px ,-130px);
                 background-color: transparent;
             }
         }    

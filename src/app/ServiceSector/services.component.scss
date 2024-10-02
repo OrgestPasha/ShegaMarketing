@@ -92,17 +92,21 @@ $colorBackground:#FFFFFF;
   @media (max-width:36rem) {
     
     .service-container{
-        overflow: hidden;
-        width:100vw;
+        
+        width:30vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
     .services-bottom{
         flex-direction: column;
         justify-content:center;
+        align-items: center;
         
         .s-container{
             margin: 0;
            scale: 0.8;
-           transform: translate(55px);
+           
             
         }
 
