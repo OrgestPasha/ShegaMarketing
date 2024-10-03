@@ -32,7 +32,6 @@ $colorBackground:#FFFFFF;
     }   
     .s-container{
         width:200px;
-       
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -90,25 +89,20 @@ $colorBackground:#FFFFFF;
   }
 
   @media (max-width:36rem) {
-    
-    .service-container{
-        
-        width:30vw;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
+       
+   
     .services-bottom{
-        flex-direction: column;
-        justify-content:center;
-        align-items: center;
+        transform: translateY(-100px);
+        scale:0.8;
+        .bottom-left{min-width: 100%; margin-bottom:30px;}
+        .bottom-right{min-width: 100%;}
         
-        .s-container{
-            margin: 0;
-           scale: 0.8;
-           
-            
-        }
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        
+      
 
         
     }
