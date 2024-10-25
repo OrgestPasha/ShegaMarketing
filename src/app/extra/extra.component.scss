@@ -21,10 +21,18 @@
 
 @media (max-width:36rem) {
     .extra-container{
-        margin-top:200px;
-        margin-bottom:200px;
+        margin-top:0px;
+        margin-bottom:100px;
         .extra-left{
             margin-right:30px;
+        }
+        .extra-right{
+            h1{
+                font-size: 2.5rem;
+            }
+            p{
+                font-size: 1rem;
+            }
         }
     }
   

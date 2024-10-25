@@ -63,7 +63,7 @@
                 .text-container{
                     width:100%;
                     margin-left:25px;
-                    margin-bottom: -45px;
+                    margin-bottom: -15px;
                     .hello-text{
                         text-align:start;
                     }
@@ -72,11 +72,10 @@
             .dashboard-upper-right{
                 width:105%;
                 margin-top:10px;
-                overflow-x: hidden;  
                 img{
                     position: relative;
                     scale:0.65;
-                    top:-40px;
+                    top:-100px;
                     z-index:0;
                     
                     right: -95px;
@@ -84,10 +83,12 @@
                     }
                 }
             }
-        .dashboard-lower{
+        .dashboard-lower{     
+            /* Scales the image to 50% of the container size */
             
-            background-size:120%;
-            transform: translate(-5vw ,-305px);
+            background-repeat: repeat;
+            height:130px;
+            transform: translate(-2vw,-405px);
         }    
         }
     }

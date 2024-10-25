@@ -49,18 +49,18 @@ $colorBackground:#FFFFFF;
 
 @media (max-width: 36rem){
     .slogan-container{
-        margin-top:-250px;
-        transform: translateX(-10px);
+        margin-top:-350px;
+        transform: translateX(0px);
         .slogan-left{
             width: 200px;
             height:200px;
             img{
-                transform: translate(55%, 80px);
+                transform: translate(50%, 80px);
                 scale:0.4;
             }
             .text-container{
                 width:55%;
-                margin-left:-10px;
+                margin-left:-20px;
                 margin-top:10px;
                 h3{
                     display: none;
@@ -73,17 +73,15 @@ $colorBackground:#FFFFFF;
                     margin-top:45px;
                     text-align: start;
                     font-size: 0.8rem;
-                    
                 }
             }
            
         }
         .slogan-right{
             height:250px;
-            margin-left: 0;
+            margin-left: -10px;
             
             h1{ 
-                
                 font-size: 1rem;
             }
         }

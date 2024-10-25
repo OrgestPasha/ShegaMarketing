@@ -93,9 +93,9 @@ $colorBackground:#FFFFFF;
    
     .services-bottom{
         transform: translateY(-100px);
-        scale:0.8;
-        .bottom-left{min-width: 100%; margin-bottom:30px;}
-        .bottom-right{min-width: 100%;}
+        scale:0.75;
+        .bottom-left{min-width: 100%; margin-bottom:30px; gap:50px;}
+        .bottom-right{min-width: 100%;  gap:50px;}
         
         flex-direction: column;
         align-items: center;
